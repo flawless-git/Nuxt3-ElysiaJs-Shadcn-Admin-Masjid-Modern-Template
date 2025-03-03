@@ -1,0 +1,39 @@
+{
+  "name": "api-admin-masjid",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build --compile --minify-whitespace --minify-syntax --target bun --outfile server ./src/index.ts",
+    "start": "bun run server",
+    "seed": "bun run src/db/seed.ts",
+    "migrate": "drizzle-kit push:pg"
+  },
+  "dependencies": {
+    "@elysiajs/cookie": "^0.8.0",
+    "@elysiajs/jwt": "^1.2.0",
+    "@elysiajs/static": "^1.2.0",
+    "@elysiajs/swagger": "^1.2.2",
+    "@paralleldrive/cuid2": "^2.2.2",
+    "aws-sdk": "^2.1574.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.40.0",
+    "drizzle-typebox": "^0.3.0",
+    "elysia": "latest",
+    "mock-aws-s3": "^4.0.2",
+    "nock": "^13.5.4",
+    "pg": "^8.13.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/pg": "^8.11.11",
+    "bun-types": "latest",
+    "drizzle-kit": "^0.30.5",
+    "tsx": "^4.19.3"
+  },
+  "override": {
+    "@sinclair/typebox": "0.32.4"
+  },
+  "module": "src/index.js"
+}

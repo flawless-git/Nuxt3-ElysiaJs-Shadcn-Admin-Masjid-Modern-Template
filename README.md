@@ -120,8 +120,8 @@ cp .env.example .env
 # PORT=1010
 # HOST=0.0.0.0
 
-# Run database migration
-bun drizzle-kit push:pg
+# Run database push
+bun drizzle-kit push
 
 # Run seed data
 bun run seed

@@ -210,7 +210,7 @@ HOST=0.0.0.0
 
 ```env
 # API URL
-NUXT_PUBLIC_API_BASE=http://localhost:1010
+NUXT_PUBLIC_API_BASE=http://localhost:3000
 ```
 
 ## Contributing
